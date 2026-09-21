@@ -3,69 +3,602 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anup Kumar Shettar | Portfolio</title>
+
+    <meta
+        name="description"
+        content="Anup N Shettar - Java Developer, Spring Boot and AWS Cloud Enthusiast"
+    >
+
+    <title>Anup N Shettar | Java Developer</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h2>Welcome to Anup's AWS Portfolio</h2>
-    <header>
-        <h1>Anup Kumar Shettar</h1>
-        <p>Java Developer | Spring Boot | AWS Cloud Enthusiast</p>
-    </header>
 
-    <section>
-        <h2>About Me</h2>
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            ANUP<span>.</span>
+        </a>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#cloud">Cloud</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <p class="eyebrow">
+                COMPUTER SCIENCE GRADUATE
+            </p>
+
+            <h1>
+                Hi, I'm <span>Anup</span>
+                <br>
+                Java Developer
+            </h1>
+
+            <p class="hero-description">
+                I build backend applications using Java and Spring Boot,
+                and I enjoy deploying applications using Docker and AWS.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View Projects
+                </a>
+
+                <a href="resume.pdf" class="btn secondary-btn" download>
+                    Download Resume
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/Anup474"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="https://linkedin.com/in/anup-kumar-shettar"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="code-window">
+
+                <div class="window-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <pre><code>
+public class Developer {
+
+    String name = "Anup";
+    String role = "Java Developer";
+
+    String[] skills = {
+        "Java",
+        "Spring Boot",
+        "AWS",
+        "Docker"
+    };
+
+    public void build() {
+        System.out.println(
+            "Building scalable software"
+        );
+    }
+}
+                </code></pre>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-label">ABOUT ME</p>
+            <h2>Building software with a cloud mindset.</h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I'm a Computer Science graduate interested in
+                    backend development, cloud technologies and DevOps.
+                </p>
+
+                <p>
+                    My primary development stack is Java and Spring Boot.
+                    I have worked with REST APIs, MySQL, Docker and Git,
+                    and I have also deployed applications on AWS.
+                </p>
+
+                <p>
+                    Currently, I'm focused on strengthening my backend,
+                    AWS and CI/CD skills while building practical projects.
+                </p>
+
+            </div>
+
+
+            <div class="about-stats">
+
+                <div class="stat">
+                    <strong>8.1</strong>
+                    <span>CGPA</span>
+                </div>
+
+                <div class="stat">
+                    <strong>Java</strong>
+                    <span>Primary Language</span>
+                </div>
+
+                <div class="stat">
+                    <strong>AWS</strong>
+                    <span>Cloud Platform</span>
+                </div>
+
+                <div class="stat">
+                    <strong>CI/CD</strong>
+                    <span>GitHub Actions</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section section-alt">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-label">TECHNICAL SKILLS</p>
+            <h2>Technologies I work with.</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">☕</div>
+                <h3>Backend</h3>
+                <p>
+                    Java, Spring Boot, Spring Data JPA,
+                    REST APIs and MVC architecture.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🗄</div>
+                <h3>Database</h3>
+                <p>
+                    MySQL, SQL, database design and
+                    data persistence using JPA.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🐳</div>
+                <h3>DevOps</h3>
+                <p>
+                    Docker, Docker Compose, Git,
+                    GitHub and CI/CD fundamentals.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">☁</div>
+                <h3>AWS Cloud</h3>
+                <p>
+                    EC2, S3, IAM, VPC, CloudWatch
+                    and cloud deployment.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>Languages</h3>
+                <p>
+                    Java, Python, HTML and CSS,
+                    with strong OOP fundamentals.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🛠</div>
+                <h3>Tools</h3>
+                <p>
+                    Maven, Postman, VS Code,
+                    IntelliJ IDEA and GitHub.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-label">PROJECTS</p>
+            <h2>Things I've built.</h2>
+        </div>
+
+
+        <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+                    <span class="project-number">01</span>
+                    <span class="project-type">BACKEND</span>
+                </div>
+
+                <h3>Real-Time Chat Application</h3>
+
+                <p>
+                    Real-time messaging application built with
+                    Spring Boot, WebSocket/STOMP, MySQL and Redis.
+                    Containerized using Docker for consistent deployment.
+                </p>
+
+                <div class="tech-stack">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>WebSocket</span>
+                    <span>MySQL</span>
+                    <span>Redis</span>
+                    <span>Docker</span>
+                </div>
+
+                <a
+                    href="https://github.com/Anup474/springboot-chat-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    View on GitHub ↗
+                </a>
+
+            </article>
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+                    <span class="project-number">02</span>
+                    <span class="project-type">WEB APP</span>
+                </div>
+
+                <h3>E-Commerce Web Application</h3>
+
+                <p>
+                    Backend-oriented e-commerce application developed
+                    using Java and Spring Boot with REST APIs,
+                    Spring Data JPA and Docker.
+                </p>
+
+                <div class="tech-stack">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>JPA</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                    <span>Maven</span>
+                </div>
+
+                <a
+                    href="https://github.com/Anup474"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    View Projects ↗
+                </a>
+
+            </article>
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+                    <span class="project-number">03</span>
+                    <span class="project-type">CLOUD / DEVOPS</span>
+                </div>
+
+                <h3>AWS S3 Portfolio + CI/CD</h3>
+
+                <p>
+                    Static portfolio website hosted on Amazon S3 with
+                    automated deployments using GitHub Actions.
+                    Demonstrates AWS hosting, IAM and CI/CD workflow.
+                </p>
+
+                <div class="tech-stack">
+                    <span>AWS S3</span>
+                    <span>IAM</span>
+                    <span>GitHub Actions</span>
+                    <span>CI/CD</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <a
+                    href="https://github.com/Anup474/aws-s3-portfolio-website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    View on GitHub ↗
+                </a>
+
+            </article>
+
+
+            <!-- PROJECT 4 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+                    <span class="project-number">04</span>
+                    <span class="project-type">MACHINE LEARNING</span>
+                </div>
+
+                <h3>House Price Prediction</h3>
+
+                <p>
+                    Machine learning project using Python for exploratory
+                    data analysis, feature analysis and regression-based
+                    house price prediction.
+                </p>
+
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-Learn</span>
+                    <span>Machine Learning</span>
+                </div>
+
+                <a
+                    href="https://github.com/Anup474"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    View Projects ↗
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CLOUD ================= -->
+
+<section id="cloud" class="section section-alt">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-label">CLOUD & DEVOPS</p>
+            <h2>Learning by deploying.</h2>
+        </div>
+
+
+        <div class="cloud-content">
+
+            <div class="cloud-flow">
+
+                <div class="flow-box">
+                    GitHub
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="flow-box">
+                    GitHub Actions
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="flow-box">
+                    Amazon S3
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="flow-box">
+                    Website
+                </div>
+
+            </div>
+
+
+            <div class="cloud-description">
+
+                <h3>My AWS deployment workflow</h3>
+
+                <p>
+                    I use GitHub Actions to automatically deploy updates
+                    from my repository to Amazon S3. This project helped
+                    me understand source control, IAM credentials,
+                    automation and cloud deployment.
+                </p>
+
+                <div class="cloud-tags">
+                    <span>AWS</span>
+                    <span>S3</span>
+                    <span>IAM</span>
+                    <span>GitHub Actions</span>
+                    <span>CI/CD</span>
+                    <span>Docker</span>
+                    <span>EC2</span>
+                    <span>CloudWatch</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="container contact-container">
+
+        <div class="contact-content">
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>
+                Let's build something
+                <span>great.</span>
+            </h2>
+
+            <p>
+                I'm currently looking for opportunities in software
+                engineering, backend development and cloud technologies.
+            </p>
+
+            <a
+                href="mailto:anupshettar2004@gmail.com"
+                class="btn primary-btn"
+            >
+                Email Me
+            </a>
+
+        </div>
+
+
+        <div class="contact-links">
+
+            <a href="mailto:anupshettar2004@gmail.com">
+                <span>Email</span>
+                <strong>anupshettar2004@gmail.com</strong>
+            </a>
+
+            <a
+                href="https://github.com/Anup474"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <span>GitHub</span>
+                <strong>github.com/Anup474</strong>
+            </a>
+
+            <a
+                href="https://linkedin.com/in/anup-kumar-shettar"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <span>LinkedIn</span>
+                <strong>linkedin.com/in/anup-kumar-shettar</strong>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-content">
+
         <p>
-            Computer Science graduate with skills in Java, Spring Boot,
-            MySQL, Docker, Git, GitHub and AWS. Passionate about backend
-            development and cloud technologies.
+            © <span id="year"></span> Anup N Shettar
         </p>
-    </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>Spring Boot</li>
-            <li>MySQL</li>
-            <li>AWS</li>
-            <li>Docker</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
+        <p>
+            Built with HTML, CSS & JavaScript • Hosted on AWS
+        </p>
 
-    <section>
-        <h2>Projects</h2>
+    </div>
 
-        <div class="project">
-            <h3>Spring Boot Chat Application</h3>
-            <p>
-                Real-time chat application built using Spring Boot,
-                WebSocket, Redis, MySQL and Docker.
-            </p>
-        </div>
+</footer>
 
-        <div class="project">
-            <h3>House Price Prediction</h3>
-            <p>
-                Machine Learning project using Python, Pandas and
-                Scikit-Learn.
-            </p>
-        </div>
-    </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: anupshettar2004@gmail.com</p>
-        <p>GitHub: github.com/Anup474</p>
-        <p>LinkedIn: linkedin.com/in/anup-kumar-shettar</p>
-    </section>
-
-    <footer>
-        <p>© 2026 Anup Kumar Shettar</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
